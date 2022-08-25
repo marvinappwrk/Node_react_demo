@@ -1,5 +1,5 @@
 // module.exports = mongoose => {
-//  const Tutorial = mongoose.model(
+//  const Tutorial = new mongoose.model(
 //    "tutorial",
 //    mongoose.Schema(
 //      {
@@ -13,9 +13,8 @@
 //  return Tutorial;
 // };
 
-
 module.exports = mongoose => {
-  var schema = mongoose.Schema(
+  var schema = new mongoose.Schema(
     {
       title: String,
       description: String,
@@ -28,6 +27,6 @@ module.exports = mongoose => {
     object.id = _id;
     return object;
   });
-  const Tutorial = mongoose.model("tutorial", schema);
+  const Tutorial = mongoose.model("Tutorial", schema);
   return Tutorial;
 };
