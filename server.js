@@ -3,7 +3,7 @@ const routes = require('./app/routes/tutorial'); // import the routes
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
-const mongoose = require('mongoose');
+
 const db = require("./app/models");
 
 // PORT
